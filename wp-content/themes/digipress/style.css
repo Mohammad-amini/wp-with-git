@@ -1,0 +1,304 @@
+/*
+Theme Name: DigiPress
+Theme URI: https://burgerthemes.com/digipress-free/
+Author: burgersoftware
+Author URI: https://burgerthemes.com/
+Description: DigiPress is one of the best WordPress themes for SEO & digital marketing, This SEO friendly theme is the perfect fit for SEO marketing agencies, social media agency and all other types of marketing businesses, You get an astounding number of features with this theme, so take your business to the next level and make an astounding website with DigiPress! Checkout Pro Version https://burgerthemes.com/demo/pro/digipress/
+Template: seokart
+Version: 1.0.1
+Tested up to: 6.0
+Requires PHP: 5.6
+License: GPLv3 or later
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
+Text Domain: digipress
+Slug: digipress
+Tags: one-column, two-columns, left-sidebar, right-sidebar, flexible-header, custom-background, custom-colors, custom-header, custom-menu, featured-image-header, featured-images, footer-widgets, full-width-template, theme-options, threaded-comments, translation-ready, blog, grid-layout, portfolio, photography
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+*/
+
+/* Colors */
+:root {
+    --color-gradient1:linear-gradient(to right, var(--color-primary1) 0%, var(--color-primary2) 51%, var(--color-primary1) 100%);
+    --color-gradient2:linear-gradient(to right, var(--color-primary1), var(--color-primary1), var(--color-primary2), var(--color-primary2), var(--color-primary2));
+    --color-gradient3:linear-gradient(0deg, var(--color-primary1) 0%, var(--color-primary2) 100%);
+    --color-gradient4:linear-gradient(-85deg, var(--color-primary2) 0%, var(--color-primary1) 100%);
+    --color-gradient5:linear-gradient(90deg, var(--color-primary2) 0%, var(--color-primary1) 100%);
+    --color-gradient6:linear-gradient(180deg, var(--color-primary2) 0%, var(--color-primary1) 100%);
+    --color-gradient7:linear-gradient(0deg, var(--color-secondary3) 0%, var(--color-secondary) 100%);
+    --color-primary1:#ff4934;
+    --color-primary2:#ff4934;
+    --color-secondary:#081C75;
+    --color-secondary2:#020d2d;
+    --color-secondary3:#091d77;
+    --font-awesome:'FontAwesome';
+}
+
+
+.digipress-theme .logo img, .digipress-theme .mobile-logo img {
+    height: auto;
+}
+
+.digipress-theme .top-header-wrap {
+    padding: 0 30px;
+    width: 100%;
+    display: inline-block;
+    background: #fff;
+    border-radius: 10px;
+    z-index: 999;
+}
+
+.digipress-theme .main-header .navbar {
+    background: none;
+}
+
+
+.digipress-theme .header-widget {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+}
+
+
+.digipress-theme .widget_social_widget li a:hover,
+.digipress-theme .widget_social_widget li a:focus {
+    border: 1px solid #fff;
+}
+
+.digipress-theme .widget_social_widget li a:hover i,
+.digipress-theme .widget_social_widget li a:focus i {
+    color: #fff;
+}
+
+.digipress-theme .main-header:not(.header-fixed) .navbar .navbar-menu ul li a svg {
+    fill: #fff;
+}
+
+.digipress-theme .main-header .navbar .navbar-nav > li:hover a:not(.theme-button), .digipress-theme .main-header .navbar .navbar-nav > li.focus a, .digipress-theme .main-header .navbar .navbar-nav > li.active a {
+    color: var(--color-primary2) !important;
+}
+
+.digipress-theme .main-header .navbar-menubar {
+    display: flex;
+    justify-content: space-between;
+	float: none;
+}
+
+
+a:not(.theme-button):not(.main-header .navbar .navbar-menu ul li a):not(.woocommerce-MyAccount-navigation ul li a):not(.woocommerce ul.products li.product a):not(.woocommerce nav.woocommerce-pagination ul.page-numbers li .page-numbers):not(.widget:not(.widget_social_widget):not(.widget_tag_cloud) li a):not(.digipress-theme .header-widget .info-widget a) {
+    color: var(--color-primary1);
+}
+
+
+.digipress-theme .main-header .navbar {
+    padding: 15px 0px;
+}
+
+
+
+.digipress-theme .main-header li.dropdown.cs-menu.search-menu:after {
+    content: "";
+    position: absolute;
+    right: -15px;
+    top: 16px;
+    height: 22px;
+    width: 1px;
+    border-right: 1px solid #445396;
+}
+
+.digipress-theme .header-widget .info-widget>li::after {
+    border-right: 1px solid #dbdce3;
+}
+
+
+.digipress-theme .slider-section img {
+    max-width: 100%;
+    width: 100% !important;
+}
+
+.digipress-theme .main-header .widget_social_widget li a:hover i,
+.digipress-theme .main-header .widget_social_widget li a:focus i {
+		color: #fff;
+	}
+	
+@media (min-width: 992px){
+	body.admin-bar.digipress-theme .main-header:not(.header-fixed) {
+		top: 50px;
+	}
+	.digipress-theme .main-header:not(.header-fixed) {
+		top: 20px;
+	}
+	
+	.digipress-theme .main-header:not(.header-fixed) .navbar .navbar-menu ul li a {
+		color: #fff;
+	}
+	.digipress-theme .header-widget .info-widget li a {
+		color: #000 !important;
+	}
+	.digipress-theme .main-header .widget_social_widget li a i {
+		color: var(--color-secondary2);
+	}
+
+	.digipress-theme .main-header .widget_social_widget li a  {
+		border: 1px solid var(--color-secondary2);
+	}
+	
+	.digipress-theme .main-slider div.main-content {
+		margin-top: 14rem;
+		margin-bottom: 8rem;
+	}
+	.digipress-theme .main-header .navbar {
+		border-bottom: 1px solid #fefefe4a;
+		border-radius: 0;
+	}
+}
+
+
+.digipress-theme .home-slider, .home-slider .owl-item img{
+	width: 100%;
+    height: 100%;
+}
+
+.digipress-theme .slider-section {
+    padding: 0;
+}
+
+.digipress-theme .main-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.digipress-theme .main-slider div.main-content {
+    position: relative;
+    max-width: 45rem;
+    width: 100%;
+}
+
+.digipress-theme .slider-section::after {
+    content: none;
+}
+
+.digipress-theme .slider-area .slider-inner .item {
+    padding-bottom: 0;
+}
+
+.digipress-theme .main-slider .text-center {
+    margin: auto;
+}
+
+.digipress-theme .main-slider .text-right {
+    margin-left: auto;
+	text-align: right;
+}
+
+.digipress-theme .slider-area .owl-nav .owl-prev{
+    left: 20px;
+}
+
+.digipress-theme .slider-area .owl-nav .owl-next {
+	right: 20px;
+}
+
+
+.digipress-theme .main-slider .main-table {
+    overflow: hidden;
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.digipress-theme .main-slider .main-table-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+@media (max-width: 991px){
+	.digipress-theme .slider-section {
+		padding: 70px 0 60px;
+		background-size: 100% auto;
+		background: none;
+	}	
+	/* .digipress-theme .slider-area div.main-content { */
+		/* margin-top: 7rem; */
+	/* } */
+	
+	.digipress-theme .main-header .navbar .navbar-toggler {
+		top: 0;
+	}
+	.digipress-theme .logo {
+		margin-top: 0;
+	}
+	.digipress-theme .main-header .navbar {
+		padding: 0px;
+	}
+	.digipress-theme .main-header .top-header {
+		z-index: 9999;
+	}
+}
+
+@media (max-width: 768px){	
+	/* .digipress-theme .slider-area div.main-content { */
+		/* margin-top: 2rem; */
+	/* } */
+}
+
+@media (max-width: 575px){
+	/* .digipress-theme .slider-area div.main-content { */
+		/* margin-top: 5rem; */
+	/* } */
+	.digipress-theme .slider-area h2 {
+		font-size: 20px;
+		padding: 7px 0;
+	}
+	.digipress-theme .slider-area p {
+		padding-bottom: 10px;
+	}
+}
+
+@media (max-width: 380px){
+	/* .digipress-theme .slider-area div.main-content { */
+		/* margin-top: 0.5rem; */
+	/* } */
+	.digipress-theme .slider-area h2 {
+		font-size: 15px;
+		padding: 2px 0;
+	}
+	.digipress-theme .slider-area p {
+		padding-bottom: 2px;
+		line-height: 1.2;
+	}
+	
+	.digipress-theme .slider-area .badge-count {
+		line-height: 20px;
+		font-size: 15px;
+	}
+	.digipress-theme .slider-area .theme-button {
+		line-height: 26px;
+	}
+}
+
+.digipress-theme .footer-area .widget_tag_cloud a {
+    color: #fff !important;
+}
+
+.sidebar .widget_tag_cloud a:hover,
+.sidebar .widget_tag_cloud a:focus {
+    color: #fff !important;
+}
+
+.digipress-theme .pagination .nav-links a:hover, .digipress-theme .pagination .nav-links a:focus, .digipress-theme .pagination .nav-links .page-numbers.current {
+    color: var(--bs-white) !important;
+}
+
+.digipress-theme.woocommerce-cart .wc-proceed-to-checkout a.checkout-button {
+    color: #fff !important;
+}
